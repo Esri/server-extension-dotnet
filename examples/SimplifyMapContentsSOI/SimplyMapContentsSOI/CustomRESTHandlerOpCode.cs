@@ -13,23 +13,23 @@
 
 using ESRI.ArcGIS.SOESupport.SOI;
 
-namespace NWC
+namespace SimplifyMapContentsSOI
 {
     /// <summary>
     /// TODO
     /// </summary>
-    class MyRESTHandlerOpCode : RestHandlerOpCode
+    class CustomRESTHandlerOpCode : RestHandlerOpCode
     {
       /// <summary>
       /// TODO
       /// </summary>
-      public static readonly MyRESTHandlerOpCode RootReturnUpdates = new MyRESTHandlerOpCode(888);
-      public static readonly MyRESTHandlerOpCode LayerRootReturnUpdates = new MyRESTHandlerOpCode(999);
+      public static readonly CustomRESTHandlerOpCode RootReturnUpdates = new CustomRESTHandlerOpCode(888);
+      public static readonly CustomRESTHandlerOpCode LayerRootReturnUpdates = new CustomRESTHandlerOpCode(999);
 
       /// <summary>
       /// TODO
       /// </summary>
       /// <param name="internalValue"></param>
-      protected MyRESTHandlerOpCode(int internalValue) : base(internalValue) { }
+      protected CustomRESTHandlerOpCode(int internalValue) : base(internalValue) { }
     }
 }

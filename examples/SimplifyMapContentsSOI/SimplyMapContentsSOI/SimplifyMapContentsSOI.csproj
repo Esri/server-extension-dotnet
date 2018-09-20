@@ -8,8 +8,8 @@
     <ProjectGuid>{91A9D085-81DE-43A8-819D-88B81D547C6F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>NWC</RootNamespace>
-    <AssemblyName>NWC</AssemblyName>
+    <RootNamespace>simplyMapContentsSOI</RootNamespace>
+    <AssemblyName>SimplyMapContentsSOI</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SignAssembly>true</SignAssembly>
@@ -68,8 +68,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MyRESTHandlerOpCode.cs" />
-    <Compile Include="NWC.cs" />
+    <Compile Include="CustomRESTHandlerOpCode.cs" />
+    <Compile Include="SimplifyMapContents.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

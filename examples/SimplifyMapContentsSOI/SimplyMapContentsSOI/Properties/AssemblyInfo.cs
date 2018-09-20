@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("NWC")]
+[assembly: AssemblyTitle("Simply Map Contents SOI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Esri")]
-[assembly: AssemblyProduct("NWC")]
+[assembly: AssemblyProduct("SimplyMapContentsSOI")]
 [assembly: AssemblyCopyright("Copyright ©  2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -35,10 +35,10 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
 
-[assembly: ESRI.ArcGIS.SOESupport.AddInPackage("NWC", "27fe2013-17b5-49a3-938f-e1fd6206c17e",
+[assembly: ESRI.ArcGIS.SOESupport.AddInPackage("SimplyMapContentsSOI", "27fe2013-17b5-49a3-938f-e1fd6206c17e",
     Author = "Esri",
     Company = "",
-    Date = "5/20/2016 3:13:06 PM",
+    Date = "9/19/2018 3:13:06 PM",
     Description = "",
     TargetProduct = "Server",
     TargetVersion = "10.4",

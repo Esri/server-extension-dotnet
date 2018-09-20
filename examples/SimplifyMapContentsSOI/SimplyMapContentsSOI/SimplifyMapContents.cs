@@ -31,22 +31,22 @@ using System.Web.Script.Serialization;
 using System.IO;
 
 
-namespace NWC
+namespace SimplifyMapContentsSOI
 {
   [ComVisible(true)]
   [Guid("117d4dec-5cc0-471f-b897-6779166eda2b")]
   [ClassInterface(ClassInterfaceType.None)]
   [ServerObjectInterceptor("MapServer",
       Description = "",
-      DisplayName = "NWC",
+      DisplayName = "Simplify Map Contents-SOI",
       Properties = "")]
-  public class NWC : IServerObjectExtension, IRESTRequestHandler
+  public class SimplifyMapContentsSOI : IServerObjectExtension, IRESTRequestHandler
   {
     private string _soiName;
     private IServerObjectHelper _soHelper;
     private ServerLogger _serverLog;
     private RestSOIHelper _restServiceSOI;
-    private String _configFilePath = @"C:\arcgisserver\NWC.json";
+    private String _configFilePath = @"C:\arcgisserver\SimplifyMapContentsSOI.json";
     private String _timeFieldName = ""; // = "TimeValue";
     private String _liveTimeLayerID = "";
     private String _queryableLayerID = "";
@@ -56,7 +56,7 @@ namespace NWC
     private int _defaultTimeInterval = -1;
     private esriTimeUnits _defaultTimeIntervalUnits = esriTimeUnits.esriTimeUnitsUnknown;
 
-    public NWC()
+    public SimplifyMapContentsSOI()
     {
       _soiName = this.GetType().Name;
     }
@@ -75,7 +75,7 @@ namespace NWC
                                                 PreFilter = PreFilterExport, 
                                                 PostFilter = null 
                                             } },
-                { MyRESTHandlerOpCode.RootReturnUpdates, new RestFilter 
+                { CustomRESTHandlerOpCode.RootReturnUpdates, new RestFilter 
                                             { 
                                                 PreFilter = PreRootReturnUpdates, 
                                                 PostFilter = PostRootReturnUpdates 
@@ -159,7 +159,7 @@ namespace NWC
     private RestHandlerOpCode GetHandlerOpCode(string resourceName, string operationName, bool isAskingForReturnUpdates = false)
     {
       if (isAskingForReturnUpdates)
-        return MyRESTHandlerOpCode.RootReturnUpdates;
+        return CustomRESTHandlerOpCode.RootReturnUpdates;
 
 
       RestHandlerOpCode opCode = RestSOIHelper.GetHandlerOpCode(resourceName, operationName);
