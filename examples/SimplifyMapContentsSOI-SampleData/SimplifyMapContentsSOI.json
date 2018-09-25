@@ -1,6 +1,6 @@
 [
 {
-	"fqsn": "NWC_Anamoly.MapServer",
+	"fqsn": "NationalWaterModel_Short_Anomaly_Sample.MapServer",
 	"redirectQueryToLayerID": 4,
 	"timeFieldName": "timevalue",
 	"liveTimeLayerID": "0",
