@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db_schemas>
+  <db_schema>
+    <table name="LargeScale">
+      <indices>
+        <index name="FDO_OBJECTID">
+          <field name="OBJECTID"/>
+        </index>
+        <index name="station_id">
+          <field name="station_id"/>
+        </index>
+      </indices>
+      <tolerance_xy>0x40000000       0</tolerance_xy>
+      <domain_minx>0xC1731C0440000000</domain_minx>
+      <domain_maxx>0x433FFFFFFECE3FBA</domain_maxx>
+      <domain_miny>0xC17CD714C0000000</domain_miny>
+      <domain_maxy>0x433FFFFFFE328EB2</domain_maxy>
+      <sp_ind_grid_size_0>0x40AF4000       0</sp_ind_grid_size_0>
+      <sp_ind_grid_count>1</sp_ind_grid_count>
+    </table>
+  </db_schema>
+</db_schemas>
