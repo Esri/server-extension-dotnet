@@ -5,11 +5,11 @@ server extensions, Server Object Extensions (SOEs) and Server Object Interceptor
 REST server extensions.
 
 ## Features
-* SimplifyMapContentsSOI - A sample SOI that allows you to author a map with multiple layers but only exposes one layer in the map service REST resources to keep the web clients user experience simpler
-     e.g. https://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer has only one layer in its root resources but the source map document (.mxd) has 5 layers representing details streams at varying level.
-     In addition to that the SOI does following:
-          (b) the [legend](http://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer/legend) is customized for REST output whereas the layer in the source map document authored with multi-field unique value renderer.
-          (c) spatial query requests always get redirected to the layer with most details level of stream and returns only one stream feature (with highest order) even though there may be more than 1 streams are found.
+* **SimplifyMapContentsSOI** - A sample SOI that allows you to author a map with multiple layers but only exposes one layer in the map service REST resources to keep the web clients user experience simpler
+    - e.g. https://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer has only one layer in its root resources but the source map document (.mxd) has 5 layers representing details streams at varying level.
+    - In addition to that, the SOI does following as well:
+        - the [legend](http://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer/legend) is customized for REST output whereas the layer in the source map document authored with multi-field unique value renderer.
+        - spatial query requests always get redirected to the layer with most details level of stream and returns only one stream feature (with highest order) even though there may be more than 1 streams are found.
 
 ## Instructions
 1. Fork and then clone the repo. 
@@ -47,6 +47,3 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 A copy of the license is available in the repository's [license.txt](/license.txt) file.
-
-[](Esri Tags: ArcGIS Enterprise Server MapService SOI)
-[](Esri Language: .Net)​
