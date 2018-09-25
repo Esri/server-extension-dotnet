@@ -1,0 +1,34 @@
+{
+	"aggregatedLayers": [{
+		"fqsn": "USGSTimeSeries.MapServer",
+		"aggregatedLayerInfo": {
+			"DynamicWorkspaceID": "SDEWorkspace",
+			"AssetTableInfo": {
+				"TableName": "STREAMGAGES",
+				"OIDFieldName": "ObjectID",
+				"ShapeFieldName": "Shape",
+				"AssetIDFieldName": "SiteCode",
+				"OtherDescriptiveFields": "SOURCE_ORI, STATION_NM",
+				"WKID": 3857,
+				"GeometryType": "esriGeometryPoint"
+			},
+			"ObservationTableInfo": {
+				"TableName": "TIMESERIES",
+				"AssetIDFieldname": "SiteCode",
+				"ObservationFieldName": "WaterLevel",
+				"ObservationFieldAlias": "Water Level",
+				"TimeInfo": {
+					"TimeFieldName": "TSTime",
+					"StartTime": 757382400000,
+					"EndTime": 1456704010000,
+					"TimeInterval": 1,
+					"TimeIntervalUnits": "esriTimeUnitsWeeks",
+					"TimeWindow": 1
+				}
+			},
+			"AggregatedFunctions": ["MIN", "MAX", "AVG"],
+			"TargetMapLayerID": 0
+
+		}
+	}]
+}
