@@ -10,6 +10,11 @@ REST server extensions.
     - In addition to that, the SOI does following as well:
         - the [legend](http://livefeeds2.arcgis.com/arcgis/rest/services/NFIE/NationalWaterModel_Medium_Anomaly/MapServer/legend) is customized for REST output whereas the layer in the source map document authored with multi-field unique value renderer.
         - spatial query requests always get redirected to the layer with most details level of stream and returns only one stream feature (with highest order) even though there may be more than 1 streams are found.
+* **AggregateLayerSOI** - A sample SOI that allows you to visualize features using dynamically generated summary statistics for any time window.
+    - instructions @ http://www.arcgis.com/home/item.html?id=ac2d864f0bf141cab2b2e62e18ce0370
+    - reference blog posts:
+        - [Server Object Interceptor (SOI) to Visualize Features with On The Fly Aggregated Values from Time-Series or Historical Observation Data](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/mapping/server-object-interceptor-soi-to-visualize-features-with-on-the-fly-aggregated-values-from-time-series-or-historical-observation-data/)
+        - [Visualizing Features with On The Fly Aggregated Values from Time-Series or Historical Observation Data](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/mapping/visualizing-features-with-on-the-fly-aggregated-values-from-time-series-or-historical-observation-data/)
 
 ## Instructions
 1. Fork and then clone the repo. 
