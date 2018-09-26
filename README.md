@@ -18,7 +18,7 @@ REST server extensions.
         - [Visualizing Features with On The Fly Aggregated Values from Time-Series or Historical Observation Data](https://www.esri.com/arcgis-blog/products/arcgis-enterprise/mapping/visualizing-features-with-on-the-fly-aggregated-values-from-time-series-or-historical-observation-data/)
 * [**ScaleDependentDataSourcesSOI**](https://github.com/Esri/server-extension-dotnet/tree/master/examples/ScaleDependentDataSourcesSOI) - A sample SOI that allows you to change the datasource of the layer base on map scale.
     - **sample dataset and setup instructions** can be found here: https://github.com/Esri/server-extension-dotnet/tree/master/examples/ScaleDependentDataSourcesSOI-SampleData
-
+    ![scaledependentdatasourcesoi](https://user-images.githubusercontent.com/11928166/46050039-a64ee700-c0e6-11e8-9b9c-e050b80e200c.gif)
 
 ## Instructions
 1. Fork and then clone the repo. 
