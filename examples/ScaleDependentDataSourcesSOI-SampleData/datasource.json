@@ -1,0 +1,53 @@
+[
+    {
+        "id": 0,
+        "dataSources": [
+            {
+                "minScale": 25000000,
+                "source": {
+                    "type": "dataLayer",
+                    "dataSource": {
+                        "type": "table",
+                        "workspaceId": "usdemo",
+                        "dataSourceName": "counties"
+                    }
+                }
+            },
+            {
+                "maxScale": 25000001,
+                "source": {
+                    "type": "dataLayer",
+                    "dataSource": {
+                        "type": "table",
+                        "workspaceId": "usdemo",
+                        "dataSourceName": "states"
+                    }
+                }
+            }
+        ],
+        "maxAllowableOffsets": [
+            {
+                "max": 100,
+                "source": {
+                    "type": "dataLayer",
+                    "dataSource": {
+                        "type": "table",
+                        "workspaceId": "usdemo",
+                        "dataSourceName": "states"
+                    }
+                }
+            },
+            {
+                "min": 100,
+                "source": {
+                    "type": "dataLayer",
+                    "dataSource": {
+                        "type": "table",
+                        "workspaceId": "usdemo",
+                        "dataSourceName": "counties"
+                    }
+                }
+            }
+        ]        
+    }
+]
